@@ -27,3 +27,10 @@ for num in numbers:
       countOdd += 1
 print(countOdd)
 print(countEven)
+
+
+
+nums = [1,2,77,10,8]
+for i in nums:
+    if i > 9 and i < 100:
+        print(i)
