@@ -41,3 +41,22 @@ print('Count of even numbers in the array is', count(find_even(numbers)))
 print('Count of odd numbers in the array is', count(find_odd(numbers)))
 print()
 
+# Exercise 3: Find Maximum and Minimum
+# Task: Find and print the largest and smallest numbers in the array.
+def find_max(arr):
+    max = arr[0]
+    for i in range(len(arr)):
+        if max < arr[i]:
+            max = arr[i]
+    return max
+
+def find_mini(arr):
+    mini = arr[0]
+    for i in range(len(arr)):
+        if mini > arr[i]:
+            mini = arr[i]
+    return mini
+
+print('The biggest number in the array is', find_max(numbers))
+print('The smallest number in the array is', find_mini(numbers))
+print()
